@@ -1,0 +1,18 @@
+{
+  "author": {
+      "name": "@naterchrdsn"
+  },
+  "dependencies": {
+    	"leet": "^1.3.0"
+  },
+  "description": "adds the !yodify and !leet commands to Kirbi",
+  "devDependencies": {},
+  "license": "Apache-2.0",
+  "name": "kirbi-translator",
+  "optionalDependencies": {},
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Richardson-Media-House/kirbi-translator.git"
+  },
+  "version": "0.0.1"
+}
