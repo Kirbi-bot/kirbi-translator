@@ -1,18 +1,17 @@
 {
-  "author": {
-      "name": "@naterchrdsn"
-  },
-  "dependencies": {
-    	"leet": "^1.3.0"
-  },
-  "description": "adds the !yodify and !leet commands to Kirbi",
-  "devDependencies": {},
-  "license": "Apache-2.0",
-  "name": "kirbi-translator",
-  "optionalDependencies": {},
-  "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Richardson-Media-House/kirbi-translator.git"
-  },
-  "version": "0.0.1"
+	"author": "Nate Richardson <hello@naterichardson.com> (https://naterichardson.com)",
+	"dependencies": {
+		"leet": "^1.3.0",
+		"soap": "^0.19.2"
+	},
+	"description": "adds the !yodify and !leet commands to Kirbi",
+	"devDependencies": {},
+	"license": "Apache-2.0",
+	"name": "kirbi-translator",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Richardson-Media-House/kirbi-translator.git"
+	},
+	"version": "0.0.1",
+	"main": "translator.js"
 }
