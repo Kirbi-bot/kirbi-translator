@@ -1,17 +1,35 @@
 {
-	"author": "Nate Richardson <hello@naterichardson.com> (https://naterichardson.com)",
-	"dependencies": {
-		"leet": "^1.3.0",
-		"soap": "^0.19.2"
-	},
-	"description": "adds the !yodify and !leet commands to Kirbi",
-	"devDependencies": {},
-	"license": "Apache-2.0",
 	"name": "kirbi-translator",
+	"description": "adds the !yodify and !leet commands to Kirbi",
+	"version": "0.1.0",
+	"license": "Apache-2.0",
+	"readme": "README.md",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Richardson-Media-House/kirbi-translator.git"
 	},
-	"version": "0.0.1",
-	"main": "translator.js"
+	"author": "Nate Richardson <hello@naterichardson.com> (https://naterichardson.com)",
+	"contributors": [
+		"Matt Carroll <admin@develogix.com> (https://develogix.com)",
+		"Joseph Moran III <joseph.moraniii@gmail.com> (https://josephmoran.co)"
+	],
+	"main": "translator.js",
+	"dependencies": {
+		"leet": "^1.3.0",
+		"soap": "^0.19.2"
+	},
+	"devDependencies": {
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"rules": {
+			"linebreak-style": ["error", "windows"],
+			"no-prototype-builtins": "warn",
+			"radix": "warn",
+			"guard-for-in": "warn"
+		}
+	},
+	"scripts": {
+		"test": "xo"
+	}
 }
