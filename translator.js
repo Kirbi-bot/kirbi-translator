@@ -1,6 +1,6 @@
 const leet = require('leet');
 
-module.exports = function (config, auth) {
+module.exports = function (Kirbi) {
 	return {
 		commands: [
 			'leet',
