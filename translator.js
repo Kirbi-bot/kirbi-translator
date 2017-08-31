@@ -1,6 +1,6 @@
 const leet = require('leet');
 
-module.exports = function (Kirbi) {
+module.exports = function () {
 	return {
 		commands: [
 			'leet',
@@ -20,21 +20,19 @@ module.exports = function (Kirbi) {
 				if (!suffix) {
 					return cb('Your statement, I must have.', msg);
 				}
-		
-				require('soap').createClient('http://www.yodaspeak.co.uk/webservice/yodatalk.php?wsdl',
-					function (err, client) {
-						if (err) {
-							return cb('Lost, I am. Not found, the web service is. Hrmm...', msg);
-						}
-		
-						client.yodaTalk({ inputText: suffix }, function (err, result) {
-							if (err) {
-								return cb('Confused, I am. Disturbance in the force, there is. Hrmm...', msg);
-							}
-							return cb(result.return, msg);
-						});
+
+				require('soap').createClient('http://www.yodaspeak.co.uk/webservice/yodatalk.php?wsdl', (err, client) => {
+					if (err) {
+						return cb('Lost, I am. Not found, the web service is. Hrmm...', msg);
 					}
-				);
+
+					client.yodaTalk({inputText: suffix}, (err, result) => {
+						if (err) {
+							return cb('Confused, I am. Disturbance in the force, there is. Hrmm...', msg);
+						}
+						return cb(result.return, msg);
+					});
+				});
 			}
 		}
 	};
