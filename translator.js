@@ -26,7 +26,7 @@ module.exports = function () {
 						return cb('Lost, I am. Not found, the web service is. Hrmm...', msg);
 					}
 
-					client.yodaTalk({inputText: suffix}, (err, result) => {
+					client.yodaTalk({ inputText: suffix }, (err, result) => {
 						if (err) {
 							return cb('Confused, I am. Disturbance in the force, there is. Hrmm...', msg);
 						}
