@@ -1,6 +1,6 @@
 const leet = require('leet');
 
-module.exports = function () {
+module.exports = () => {
 	return {
 		commands: [
 			'leet',
